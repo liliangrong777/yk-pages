@@ -1,0 +1,8 @@
+$globalColor:#171920;
+$activeColor:#649CF0;
+
+@mixin spaceBetween{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}

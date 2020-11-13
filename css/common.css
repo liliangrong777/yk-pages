@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*包含以下五种的链接*/
+a {
+  text-decoration: none;
+  color: #171920;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #649CF0;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: 0;
+}
+
+.card-transition {
+  transition: margin-left .3s ,margin-top .3s, box-shadow .3s;
+}
+
+.card-transition:hover {
+  margin-left: -5px;
+  margin-top: -5px;
+  box-shadow: 8px 8px 60px #dcdcdc;
+}
+
+.shadow-transition {
+  transition: box-shadow .2s;
+}
+
+.shadow-transition:hover {
+  box-shadow: 3px 3px 40px #ccc;
+}
+
+.ml-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

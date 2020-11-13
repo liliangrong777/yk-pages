@@ -1,0 +1,41 @@
+
+@import './global.scss';
+
+/*包含以下五种的链接*/
+a {
+    text-decoration: none;
+    color: $globalColor ;
+    &:link,&:visited,&:hover,&:active,&:focus{
+        text-decoration: none;
+    }
+    &:hover{
+        color: $activeColor ;
+    }
+}
+
+input{  
+	background:none;  
+    outline:none;  
+    border: 0;
+}
+
+// 卡片过渡动画
+.card-transition{
+    transition: margin-left .3s ,margin-top .3s, box-shadow .3s;
+    &:hover{
+        margin-left: -5px;
+        margin-top: -5px;
+        box-shadow: 8px 8px 60px #dcdcdc;
+    }
+}
+// 阴影过渡动画
+.shadow-transition{
+    transition: box-shadow .2s;
+    &:hover{
+        box-shadow: 3px 3px 40px #ccc;
+    }
+}
+// 标题
+.ml-title{
+    @include spaceBetween;
+}
